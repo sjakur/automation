@@ -2,14 +2,15 @@
 
 set -e
 
-sudo usermod -aG sudo $1
+su -c 'usermod -aG sudo $1' root
 
-sudo apt-get -qq update
+su -c 'apt-get -q -y update' root
 
-sudo apt-get install -qq openssh-server
+su -c 'apt-get install -q -y openssh-server' root
 
-sudo apt-get install -qq default-jre
+su -c 'apt-get install -q -y default-jre' root
 
-sudo apt-get install -qq default-jdk
+su -c 'apt-get install -q -y default-jdk' root
 
+su -c 'reboot' root
 
