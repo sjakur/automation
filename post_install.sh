@@ -4,7 +4,7 @@ set -e
 
 echo $1
 echo ---------------------------
-su -c 'usermod -a -G sudo $1' root
+su -c 'adduser $1 sudo' root
 
 #su -c 'apt-get -q -y update' root
 
