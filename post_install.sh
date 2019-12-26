@@ -2,6 +2,8 @@
 
 set -e
 
+echo $1
+
 #su -c 'usermod -aG sudo '"$1"'' root
 
 #su -c 'apt-get -q -y update' root
