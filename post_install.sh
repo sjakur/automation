@@ -2,7 +2,7 @@
 
 set -e
 
-echo reda chakkour 
+echo test
 
 #sudo usermod -aG sudo $1
 
